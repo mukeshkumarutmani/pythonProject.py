@@ -77,6 +77,18 @@ print(2==6 and 3==3)
 print(2==6 or 3==3)
 print(not 9>8)
 
+# condition if and else 
+age=15
+if age>21:
+    #use of indentation also use colon  for block of code
+    print("You r an adult")  
+    print("You can Vote")
+elif age<18 and age>3:
+    print("You r in school")
+else:
+  print("You r a kid ")
+print("Thank You")
+
 
 
 
