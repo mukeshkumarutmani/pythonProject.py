@@ -164,4 +164,72 @@ marks.insert(0,80)
 print(len(marks))
 
 
+# break and continue
+students=['ram','sham','radhika','suneel','akash']
+for student in students:
+    if student=='suneel':
+        break;
+    print(student)
 
+# constinue   mean skip from list
+
+students=['ram','sham','radhika','suneel','akash']
+for student in students:
+    if student=='suneel':
+        continue;
+    print(' '+student)
+
+
+# TUPLE     IMMUETABLE IT CANT BE CHANGE
+marks =(95,45,23,56)
+# marks[0]=90
+print(marks)
+
+marks =(95,45,23,56,78, 87,78,78)
+
+print(marks.count(78))
+print(marks.index(78))
+
+person='ram','sham','mukesh' 
+print(person)
+
+# SET
+# marks={34,45,56,65,45,87,45,45}
+# print(marks[0]) #it cant be access by index in set we can iterate by looops
+
+marks={34,45,56,65,45,87,45,45}
+print(marks)
+
+marks={34,45,56,65,45,87,45,45}
+for score in marks:
+    print(score)
+
+# Dictinory  it will stored information in pairs
+marks={"Kelash":78 , "KUmar": 99, "Mukesh": 100}
+print(marks["Kelash"])
+marks["rahul"]=87
+print(marks)
+
+marks["rahul"]=89
+print(marks)
+
+# FUNCTION  
+# 1: In Built Function  2: Module Function 3: User Define Function
+
+# Module Function
+
+from math import * #all function of math module
+import math
+from math import sqrt
+print(dir(math))
+print(sqrt(36))
+
+#user define function
+# def function_Name(parameters):
+def sum(first,second):
+    print(first+second)
+sum(2,6)
+
+def sum(first,second=7):
+    print(first+second)
+sum(2)
