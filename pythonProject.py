@@ -110,6 +110,25 @@ else:
   print('invalid operation')
 
 
+# RANGE
+number =range(3,5)
+print(number)
 
+# while LOOP
+i=1
+while i<=5:
+  print(i*' *  ')
+  i=i+1
+
+print('second')
+i=5
+while i>=0:
+  print(i*' *  ')
+  i=i-1
+
+# for loop
+for i in range(5):
+    print(i*5)
+ 
 
 
