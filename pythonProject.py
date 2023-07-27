@@ -131,4 +131,37 @@ for i in range(5):
     print(i*5)
  
 
+marks=[34,56,78,99]
+print(marks[-3])
+
+marks=[34,56,78,99]
+print(marks[1:3])
+
+marks=[34,56,78,99]
+for score in marks:
+    print(score)
+
+marks=[34,56,78,99]
+marks.append(80)  #append mean add in list
+print(marks)
+
+marks=[34,56,78,99]
+marks.insert(0,80)   #insert mean add between the list 
+print(marks)
+
+#find element exit or not in list
+marks=[34,56,78,99]
+marks.insert(0,80)   
+print(56 in marks)
+
+marks=[34,56,78,99]
+marks.insert(0,80)   
+print(156 in marks)
+
+#find length of element
+marks=[34,56,78,99,300]
+marks.insert(0,80)   
+print(len(marks))
+
+
 
