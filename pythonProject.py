@@ -233,3 +233,37 @@ sum(2,6)
 def sum(first,second=7):
     print(first+second)
 sum(2)
+
+def compute_average_scores(scores):
+    num_students = len(scores)
+    num_subjects = len(scores[0])
+
+    average_scores = []
+
+    for student in range(num_students):
+        total_score = 0
+        for subject in range(num_subjects):
+            total_score += scores[student][subject]
+
+        average_score = total_score / num_subjects
+        average_scores.append(str(average_score))
+
+    return average_scores
+
+# Take input from the user for the number of students (N) and number of subjects (X)
+N = int(input("Enter the number of students: "))
+X = int(input("Enter the number of subjects: "))
+
+# Take input from the user for the scores of each student
+scores = []
+for student in range(N):
+    student_scores = []
+    print(f"Enter scores for student {student + 1}:")
+    for subject in range(X):
+        score = int(input(f"Subject {subject + 1}: "))
+        student_scores.append(score)
+    scores.append(student_scores)
+
+averages = compute_average_scores(scores)
+print("Average Scores: " + ', '.join(averages))
+
