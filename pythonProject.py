@@ -267,3 +267,16 @@ for student in range(N):
 averages = compute_average_scores(scores)
 print("Average Scores: " + ', '.join(averages))
 
+def generate_coordinates(x, y, z, n):
+        coordinates = [[i, j, k] for i in range(x + 1) for j in range(y + 1) for k in range(z + 1) if i + j + k != n]
+        return coordinates
+    
+    # Input values
+x = int(input())
+y = int(input())
+z = int(input())
+n = int(input())
+    
+result = generate_coordinates(x, y, z, n)
+print(result)
+            
