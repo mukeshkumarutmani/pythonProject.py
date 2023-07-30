@@ -279,4 +279,34 @@ n = int(input())
     
 result = generate_coordinates(x, y, z, n)
 print(result)
-            
+
+
+def average_marks(student_dict, student_name):
+    # Check if the student_name exists in the dictionary
+    if student_name in student_dict:
+        marks = student_dict[student_name]
+        average = sum(marks) / len(marks)
+        return average
+    else:
+        return None
+
+# Input the number of students and their marks and names
+n = int(input())
+student_dict = {}
+
+for _ in range(n):
+    name = input()
+    marks = [float(x) for x in input(f"").split()]
+    student_dict[name] = marks
+
+# Input the student name for which you want to calculate the average marks
+student_name = input()
+
+# Call the function to calculate the average marks for the provided student
+average = average_marks(student_dict, student_name)
+
+# Print the average marks with 2 decimal places
+if average is not None:
+    print(f"{average:.2f}")
+else:
+    print(f"Student '{student_name}' not found in the dictionary.")
