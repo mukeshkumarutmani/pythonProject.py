@@ -95,8 +95,7 @@ operator=input('Input your operator +,-,*,/ is ')
 second=input('Input your 2nd Number ')
 first=int(first)
 second=int(second)
-if operator=='+':
-    print(first+second)
+
 elif operator=='*':
     print(first*second)
 elif operator=='/':
