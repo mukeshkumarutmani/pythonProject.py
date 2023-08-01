@@ -305,9 +305,10 @@ student_name = input()
 average = average_marks(student_dict, student_name)
 
 # Print the average marks with 2 decimal places
-if average is not None:
+if the average is None:
     print(f"{average:.2f}")
 else:
     print(f"Student '{student_name}' not found in the dictionary.")
 
     print(8113509743655314852)
+    print(8113509747655314852)
