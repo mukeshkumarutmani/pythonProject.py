@@ -312,3 +312,106 @@ else:
 
     print(8113509743655314852)
     print(8113509747655314852)
+
+# make program for adding numbers
+def sum(number):
+    add=0
+    for i in range(number+1):
+        add+=i
+    return add
+num=int(input("input your number "))
+sum(num)
+print(sum(num))
+
+odd number sum
+x=int(input())
+sum=0
+for i in range(x+1):
+    if i%2!=0:
+        sum+=i
+print(sum)
+
+
+even number sum
+x=int(input())
+sum=0
+for i in range(x+1):
+    if i%2==0:
+        sum+=i
+print(sum)
+
+x=int(input())
+sum=0
+for i in range(x+1):
+    if i%x==0:
+        sum+=i
+       
+print(sum)
+
+# what do we want
+# we want to evalute the algorithm
+# we want to evaulte scalbility
+# we want to evalute in term of input size 
+# best case, Wrost case, Average case
+
+Order of growth
+factorial calculate  
+
+def fac(num):
+    answer=1
+    while num>1:
+        answer*=num
+        num-=1
+    return answer
+    # print(answer)
+
+x=int(input("input Number"))
+fac(x)
+print(fac(x))
+
+it doest not depend on the length of array
+list=[3,4,5,6,7,76,847,99,8437,6476,234,34,45,56,34,45,56]
+print(list[3])
+
+# logrithm code will get more money
+# order of growth
+# constant, linear, qudratic, logorithmic, nlogn, exponetial
+# fabonaci
+
+list=[3,4,6,7,8,9]
+# list=int(list)
+sum=0
+for i in list:
+    sum+=i
+print(sum)
+
+list=[1,2,3,4,5]
+product=1
+for i in list:
+    product=i*product
+print(product)      #Time complexcity of this program will be o(n)
+
+# quadratic ---> order of growth
+time complexcity will be n**2
+import time
+start=time.time()
+list=[1,2,3,4,5]
+for i in list:
+    for j in list:
+        print("(",i,",",j,")")
+print(time.time()-start)
+
+def intTostr(i):
+    digits='0123456789'
+    if i==0:
+        return'0'
+    result=''
+    while i>0:
+        result= digits[i%10]+result
+        i=i//10
+    return result
+    # print(intTostr(i))
+# num=int(input('Number'))
+print(intTostr(99))
+    
+
