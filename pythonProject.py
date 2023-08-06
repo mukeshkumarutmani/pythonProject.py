@@ -133,7 +133,7 @@ for i in range(5):
 marks=[34,56,78,99]
 print(marks[-3])
 
-marks=[34,56,78,99]
+marks=[34,56,78,99,89]
 print(marks[1:3])
 
 marks=[34,56,78,99]
