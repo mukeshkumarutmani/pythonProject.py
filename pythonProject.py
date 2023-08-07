@@ -414,4 +414,9 @@ def intTostr(i):
 # num=int(input('Number'))
 print(intTostr(99))
     
-
+def factorial(n):
+    if n==1:
+        return 1
+    else:
+        return n*factorial(n-1)
+print(factorial(5))
