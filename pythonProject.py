@@ -426,3 +426,7 @@ print(x+x)
 a="6"
 print(int(a)+6)
 print(a+"6")
+
+print function
+print('Chanderyan III')
+print("Elon Musk")
