@@ -430,3 +430,9 @@ print(a+"6")
 print function
 print('Chanderyan III')
 print("Elon Musk")
+
+
+# use for to find size of data type
+import sys
+print(sys.maxsize)
+print(sys.int_info)
