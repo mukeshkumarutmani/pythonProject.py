@@ -436,3 +436,247 @@ print("Elon Musk")
 import sys
 print(sys.maxsize)
 print(sys.int_info)
+
+# name=input("enter your name")
+# print(name)
+
+# c=100
+# f=c*9/5+32
+# print(float(f))
+
+# temp_c=float(input("enter your temp "))
+# f=temp_c*9/5+32
+# print(str(f))
+
+# a=float(input("input number one "))
+# b=float(input("input number two "))
+# c=a**b
+# print(c)
+
+# a=78 
+# print((a))
+# try:
+     
+#     hour_worked=float(input('input your worked hour '))
+#     rate_work=float(input('input rate of the work '))
+# # if hour_worked==str:
+# #     print("Error, please enter numberic input")
+#     if hour_worked<40:
+#         gross_payy=hour_worked*rate_work
+#     else:
+#         regular_pay=40*rate_work
+#         over_timehour=hour_worked-40
+#         over_timepay=over_timehour*(rate_work*1.5)
+#         gross_payy=regular_pay+over_timepay
+#     print('Total gross pay will be '+ str(gross_payy))
+
+# except ValueError:
+#        print("Error, please enter numbers input")
+    
+# try:
+#     print("Enter the score between 0.0 and 1.0: ")
+#     score=float(input())
+#     if score>=0.9 and score<=1:
+#         print('A')
+#     elif score>=0.8 and score<0.9:
+#         print('B')
+#     elif score>=0.7 and score<0.8:
+#         print('C')
+#     elif score>=0.6 and score<0.7:
+#         print('D')
+#     elif score>0 and score<0.6:
+#         print('F')
+#     else:
+
+#        """ print('Bad Score')
+# except ValueError:
+#     print('error, please input correct numeric') """
+
+# print('Starting countdown')
+# count=10
+# while count>=1:
+#     print(count)
+#     count-=1
+# print('liftoff!')
+
+# print('countdown start')
+# for a in range(10,0,-1):
+#     print(a)
+# print('liftoff')
+
+# def my_func(b):
+#     return sum(b)
+# p_number=[2,3,4,5,6,7,8]
+# result=my_func(p_number)
+# print(result)
+
+# def func(numbers):
+#     total=0
+#     for number in numbers:
+#         total+=number
+#     return total
+# num=[3,4,5,6,7]
+# result=func(num)
+# print(result)
+
+# def my_function(numbers):
+#     total_length=len(numbers)
+#     sum=0
+#     for number in numbers:
+#         sum+=number
+
+#     average=sum/total_length
+#     return average
+
+# num=[4,5,6,7,8,9]
+# result=my_function(num)
+# print(result)
+
+
+# def my_function(num):
+#     largest_number=num[0]
+#     for number in num:
+#         if number>largest_number:
+#             largest_number=number
+#     return largest_number
+
+# list=(input('Input your list'))
+# number_string=list.split(' ')
+# numbers=[int(num) for num in number_string]
+# result=my_function(numbers)
+# print(result)
+
+# def my_function(num):
+#     smallest_num=num[0]
+#     for number in num:
+#         if smallest_num>number:
+#             smallest_num=number
+        
+#     return smallest_num
+
+# list=[340,405,504,607,793,304,900,878]
+# result=my_function(list)
+# print(result)
+
+# msge=input(' type a string ')
+# count=0
+# for letter in msge:
+#     count=count+1
+# print('the length in string is '+str(count))
+
+# mssge=input('type a mssge')
+# str_length=len(mssge)
+# print(str_length)
+
+# str_var='X-DSPAM-confidence:0.8487654323'
+# # print(str_var)
+# colo_pos=str_var.find('6')
+# # # print(colo_pos)
+
+# # num_slice=str_var[colo_pos+1:]
+# # print(num_slice)
+
+# slice_str=str_var[colo_pos+1:]
+# print(slice_str)
+# float_num=float(slice_str)
+# print(type(float_num))
+# print(float_num)
+
+# a=7
+# print(type(a))
+# text = "Hello, World"
+# substring = text[0:5]
+# print(text)
+# print(substring)
+
+
+# text='the quick brown fox jump over the lazy dog'
+# slice_of=text[0:10]
+# print(slice_of)
+
+# slice_of_2=text[-10:]
+# print(slice_of_2)
+
+# replace_str=text.replace('the', 'a')
+# print(replace_str)
+
+
+# text=input('Write a text ')
+# split_text=text.split()
+# print(split_text)
+
+# word_count=0
+# for wd in split_text:
+#     word_count=word_count+1
+
+# print(word_count)
+
+
+
+# length_words=len(split_text)
+# print(length_words)
+
+
+# list=[3,1,18,4,11,10,6,20,76,98,9,23,34,45]
+# even_list=[]
+
+# for num in list:
+#     if num%2!=0:
+#         even_list.append(num)
+# print(even_list)
+
+
+# by using list comprehension method
+
+# list=[23,34,45,56,67,98,65,77,88]
+# out_list=[i for i in list if i%2 != 0]
+
+# print(out_list)
+
+
+# list=[1,2,3,45,6,7,8,9]
+# num=1
+# for i in list:
+#     num=i*num
+# print(num)
+
+
+# num_list=[3,1,18,4,11,10,20]
+
+# sum=0
+# for i in num_list:
+#     sum+=i
+# print('The sum of all number',sum)
+
+
+# len_list=len(num_list)
+# print('length of number is '+ str(len_list))
+
+# largest_num=num_list[0]
+# for i in num_list:
+#     if i > largest_num:
+#         largest_num=i
+# print("Largest number",largest_num)
+
+# smallest_numer=num_list[0]
+# for i in num_list:
+#     if i<smallest_numer:
+#         smallest_numer=i
+# print("Smallest number",smallest_numer)
+
+
+# char_list=['y','e','l','l','o','w']
+# join_list=''.join(char_list)
+# print(join_list)
+
+# str_list=['the','quick','brown','fox']
+# join_str=''.join(str_list)
+# print(join_str)
+
+
+# list1=[3,1,18,4]
+# list2=[11,10,6,20]
+# new_list=list1+list2
+# print(new_list)
+# sort_list=sorted(new_list)
+# print(sort_list)
